@@ -1,5 +1,5 @@
 <div class="container">
-  <%= form_for(:sessions, url: sessions_path) do |f| %>
+  <%= form_for(:session, url: sessions_path) do |f| %>
 
     <%= f.label :email %><br>
     <%= f.text_field :email %><br>
@@ -9,6 +9,6 @@
 
     <br>
 
-    <%= f.submit "Sign in" %>
+    <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
   <% end %>
 </div>

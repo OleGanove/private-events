@@ -1,0 +1,7 @@
+<div class="container">
+
+  <h1> Here are all events </h1>
+  <% @events.each do |e| %>
+    <p> <%= e.location %> | <%= e.date %> | <%= e.description %> </p>
+  <% end %>
+</div>
